@@ -1,0 +1,559 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% References
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% I put them all in here (from my thesis). Then, only some of them are used in the text. Naturally so, as this is but an extended abstract. There won't be enough space to include all of them.
+@misc{preskill2023quantum,
+      title={Quantum computing 40 years later}, 
+      author={John Preskill},
+      year={2023},
+      archivePrefix = {arXiv},
+      eprint        = {2106.10522},
+      primaryClass  = {quant-ph}
+}
+
+@misc{farhi2014quantum,
+      title={A Quantum Approximate Optimization Algorithm}, 
+      author={Edward Farhi and Jeffrey Goldstone and Sam Gutmann},
+      year={2014},
+      eprint={1411.4028},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
+}
+
+@misc{tenecohen2023variational,
+      title={A Variational Qubit-Efficient MaxCut Heuristic Algorithm}, 
+      author={Yovav Tene-Cohen and Tomer Kelman and Ohad Lev and Adi Makmal},
+      year={2023},
+      eprint={2308.10383},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
+}
+
+% MaxCut applications
+@INPROCEEDINGS{937505,
+  author={Boykov, Y.Y. and Jolly, M.-P.},
+  booktitle={Proceedings Eighth IEEE International Conference on Computer Vision. ICCV 2001}, 
+  title={Interactive graph cuts for optimal boundary \& region segmentation of objects in N-D images}, 
+  year={2001},
+  volume={1},
+  number={},
+  pages={105-112 vol.1},
+  doi={10.1109/ICCV.2001.937505}
+}
+
+@article{Barahona_Grötschel_Jünger_Reinelt_1988, title={An application of combinatorial optimization to statistical physics and circuit layout design}, volume={36}, DOI={10.1287/opre.36.3.493}, number={3}, journal={Operations Research}, author={Barahona, Francisco and Grötschel, Martin and Jünger, Michael and Reinelt, Gerhard}, year={1988}, pages={493–513}}
+
+@InProceedings{10.1007/11893318_21,
+author="Poland, Jan
+and Zeugmann, Thomas",
+editor="Todorovski, Ljup{\v{c}}o
+and Lavra{\v{c}}, Nada
+and Jantke, Klaus P.",
+title="Clustering Pairwise Distances with Missing Data: Maximum Cuts Versus Normalized Cuts",
+booktitle="Discovery Science",
+year="2006",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="197--208",
+abstract="Clustering algorithms based on a matrix of pairwise similarities (kernel matrix) for the data are widely known and used, a particularly popular class being spectral clustering algorithms. In contrast, algorithms working with the pairwise distance matrix have been studied rarely for clustering. This is surprising, as in many applications, distances are directly given, and computing similarities involves another step that is error-prone, since the kernel has to be chosen appropriately, albeit computationally cheap. This paper proposes a clustering algorithm based on the SDP relaxation of the max-k-cut of the graph of pairwise distances, based on the work of Frieze and Jerrum. We compare the algorithm with Yu and Shi's algorithm based on spectral relaxation of a norm-k-cut. Moreover, we propose a simple heuristic for dealing with missing data, i.e., the case where some of the pairwise distances or similarities are not known. We evaluate the algorithms on the task of clustering natural language terms with the Google distance, a semantic distance recently introduced by Cilibrasi and Vit{\'a}nyi, using relative frequency counts from WWW queries and based on the theory of Kolmogorov complexity.",
+isbn="978-3-540-46493-8"
+}
+
+@ARTICLE{NP-problems,
+AUTHOR={Lucas, Andrew},   
+TITLE={Ising formulations of many NP problems},      
+JOURNAL={Frontiers in Physics},      
+VOLUME={2},           
+YEAR={2014},      
+URL={https://www.frontiersin.org/articles/10.3389/fphy.2014.00005},       
+DOI={10.3389/fphy.2014.00005},      
+ISSN={2296-424X},   
+ABSTRACT={We provide Ising formulations for many NP-complete and NP-hard problems, including all of Karp's 21 NP-complete problems. This collects and extends mappings to the Ising model from partitioning, covering, and satisfiability. In each case, the required number of spins is at most cubic in the size of the problem. This work may be useful in designing adiabatic quantum optimization algorithms.}
+}
+
+@article{GW-Algorithm,
+author = {Goemans, Michel X. and Williamson, David P.},
+title = {Improved approximation algorithms for maximum cut and satisfiability problems using semidefinite programming},
+year = {1995},
+issue_date = {Nov. 1995},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {42},
+number = {6},
+issn = {0004-5411},
+url = {https://doi.org/10.1145/227683.227684},
+doi = {10.1145/227683.227684},
+journal = {J. ACM},
+month = {nov},
+pages = {1115–1145},
+numpages = {31},
+keywords = {Approximation algorithms, convex optimization, randomized algorithms, satisfiability}
+}
+
+@article{Spectral-MaxCut,
+author = {Mirka, Renee and Williamson, David P.},
+title = {An Experimental Evaluation of Semidefinite Programming and Spectral Algorithms for Max Cut},
+year = {2023},
+issue_date = {December 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {28},
+issn = {1084-6654},
+url = {https://doi.org/10.1145/3609426},
+doi = {10.1145/3609426},
+abstract = {We experimentally evaluate the performance of several Max Cut approximation algorithms. In particular, we compare the results of the Goemans and Williamson algorithm using semidefinite programming with Trevisan’s algorithm using spectral partitioning. The former algorithm has a known .878 approximation guarantee whereas the latter has a .614 approximation guarantee. We investigate whether this gap in approximation guarantees is evident in practice or whether the spectral algorithm performs as well as the SDP. We also compare the performances to the standard greedy Max Cut algorithm which has a .5 approximation guarantee, two additional spectral algorithms, and a heuristic from Burer, Monteiro, and Zhang (BMZ). The algorithms are tested on Erd\H{o}s–Renyi random graphs, complete graphs from TSPLIB, and real-world graphs from the Network Repository. We find, unsurprisingly, that the spectral algorithms provide a significant speed advantage over the SDP. In our experiments, the spectral algorithms and BMZ heuristic return cuts with values which are competitive with those of the SDP.},
+journal = {ACM J. Exp. Algorithmics},
+month = {aug},
+articleno = {2.1},
+numpages = {18},
+keywords = {spectral algorithms, Max cut}
+}
+
+@INPROCEEDINGS{SA_MaxCut,
+       author = {{Sen}, Sandip},
+        title = "{Simulated annealing approach to the max cut problem}",
+    booktitle = {Applications of Artificial Intelligence 1993: Knowledge-Based Systems in Aerospace and Industry},
+         year = 1993,
+       editor = {{Fayyad}, Usama M. and {Uthurusamy}, Ramasamy},
+       series = {Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series},
+       volume = {1963},
+        month = mar,
+        pages = {61-66},
+          doi = {10.1117/12.141755},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/1993SPIE.1963...61S},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{GA_MaxCut,
+  title={A comparison study of harmony search and genetic algorithm for the max-cut problem},
+  author={Kim, Yong-Hyuk and Yoon, Yourim and Geem, Zong Woo},
+  journal={Swarm and evolutionary computation},
+  volume={44},
+  pages={130--135},
+  year={2019},
+  publisher={Elsevier}
+}
+
+@Inbook{Karp2010,
+author="Karp, Richard M.",
+title="Reducibility Among Combinatorial Problems",
+bookTitle="50 Years of Integer Programming 1958-2008: From the Early Years to the State-of-the-Art",
+year="2010",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="219--241",
+abstract="Throughout the 1960s I worked on combinatorial optimization problems including logic circuit design with Paul Roth and assembly line balancing and the traveling salesman problem with Mike Held. These experiences made me aware that seemingly simple discrete optimization problems could hold the seeds of combinatorial explosions. The work of Dantzig, Fulkerson, Hoffman, Edmonds, Lawler and other pioneers on network flows, matching and matroids acquainted me with the elegant and efficient algorithms that were sometimes possible. Jack Edmonds' papers and a few key discussions with him drew my attention to the crucial distinction between polynomial-time and superpolynomial-time solvability. I was also influenced by Jack's emphasis on min-max theorems as a tool for fast verification of optimal solutions, which foreshadowed Steve Cook's definition of the complexity class NP. Another influence was George Dantzig's suggestion that integer programming could serve as a universal format for combinatorial optimization problems.",
+isbn="978-3-540-68279-0",
+doi="10.1007/978-3-540-68279-0_8",
+url="https://doi.org/10.1007/978-3-540-68279-0_8"
+}
+
+@article{Soto-MaxCut,
+author = {Soto, Jos\'{e} A.},
+title = {Improved Analysis of a Max-Cut Algorithm Based on Spectral Partitioning},
+journal = {SIAM Journal on Discrete Mathematics},
+volume = {29},
+number = {1},
+pages = {259-268},
+year = {2015},
+doi = {10.1137/14099098X},
+
+URL = { 
+    
+        https://doi.org/10.1137/14099098X
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.1137/14099098X
+    
+    
+
+}
+,
+    abstract = { Trevisan [SIAM J. Comput., 41 (2012), pp. 1769--1786] presented an algorithm for Max-Cut based on spectral partitioning techniques. This is the first algorithm for Max-Cut with an approximation guarantee strictly larger than 1/2 that is not based on semidefinite programming. Trevisan showed that its approximation ratio is of at least 0.531. In this paper we improve this bound up to 0.614247. We also define and extend this result for the more general maximum colored cut problem. }
+}
+
+@Article{Guerreschi2019,
+author={Guerreschi, G. G. and Matsuura, A. Y.},
+title={QAOA for Max-Cut requires hundreds of qubits for quantum speed-up},
+journal={Scientific Reports},
+year={2019},
+month={May},
+day={06},
+volume={9},
+number={1},
+pages={6903},
+abstract={Computational quantum technologies are entering a new phase in which noisy intermediate-scale quantum computers are available, but are still too small to benefit from active error correction. Even with a finite coherence budget to invest in quantum information processing, noisy devices with about 50 qubits are expected to experimentally demonstrate quantum supremacy in the next few years. Defined in terms of artificial tasks, current proposals for quantum supremacy, even if successful, will not help to provide solutions to practical problems. Instead, we believe that future users of quantum computers are interested in actual applications and that noisy quantum devices may still provide value by approximately solving hard combinatorial problems via hybrid classical-quantum algorithms. To lower bound the size of quantum computers with practical utility, we perform realistic simulations of the Quantum Approximate Optimization Algorithm and conclude that quantum speedup will not be attainable, at least for a representative combinatorial problem, until several hundreds of qubits are available.},
+issn={2045-2322},
+doi={10.1038/s41598-019-43176-9},
+url={https://doi.org/10.1038/s41598-019-43176-9}
+}
+
+@misc{zhou2022qaoainqaoa,
+      title={QAOA-in-QAOA: solving large-scale MaxCut problems on small quantum machines}, 
+      author={Zeqiao Zhou and Yuxuan Du and Xinmei Tian and Dacheng Tao},
+      year={2022},
+      eprint={2205.11762},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
+}
+
+@misc{li2021largescale,
+      title={Large-scale Quantum Approximate Optimization via Divide-and-Conquer}, 
+      author={Junde Li and Mahabubul Alam and Swaroop Ghosh},
+      year={2021},
+      eprint={2102.13288},
+      archivePrefix={arXiv},
+      primaryClass={cs.ET}
+}
+
+@article{ender2022modular,
+  title={Modular parity quantum approximate optimization},
+  author={Ender, Kilian and Messinger, Anette and Fellner, Michael and Dlaska, Clemens and Lechner, Wolfgang},
+  journal={PRX Quantum},
+  volume={3},
+  number={3},
+  pages={030304},
+  year={2022},
+  publisher={APS}
+}
+
+@article{Ender2023parityquantum,
+  doi = {10.22331/q-2023-03-17-950},
+  url = {https://doi.org/10.22331/q-2023-03-17-950},
+  title = {Parity {Q}uantum {O}ptimization: {C}ompiler},
+  author = {Ender, Kilian and ter Hoeven, Roeland and Niehoff, Benjamin E. and Drieb-Sch{\"{o}}n, Maike and Lechner, Wolfgang},
+  journal = {{Quantum}},
+  issn = {2521-327X},
+  publisher = {{Verein zur F{\"{o}}rderung des Open Access Publizierens in den Quantenwissenschaften}},
+  volume = {7},
+  pages = {950},
+  month = mar,
+  year = {2023}
+}
+
+@misc{sciorilli2024largescale,
+      title={Towards large-scale quantum optimization solvers with few qubits}, 
+      author={Marco Sciorilli and Lucas Borges and Taylor L. Patti and Diego García-Martín and Giancarlo Camilo and Anima Anandkumar and Leandro Aolita},
+      year={2024},
+      eprint={2401.09421},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
+}
+
+@article{slussarenko2019photonic,
+  title={Photonic quantum information processing: A concise review},
+  author={Slussarenko, Sergei and Pryde, Geoff J},
+  journal={Applied Physics Reviews},
+  volume={6},
+  number={4},
+  year={2019},
+  publisher={AIP Publishing}
+}
+
+@article{Xanadu_Photonics,
+author = {Madsen, Lars and Laudenbach, Fabian and Askarani, Mohsen and Rortais, Fabien and Vincent, Trevor and Bulmer, Jacob and Miatto, Filippo and Neuhaus, Leonhard and Helt, Lukas and Collins, Matthew and Lita, Adriana and Gerrits, Thomas and Nam, Sae and Vaidya, Varun and Menotti, Matteo and Dhand, Ish and Vernon, Zachary and Quesada, Nicolas and Lavoie, Jonathan},
+year = {2022},
+month = {06},
+pages = {75-81},
+title = {Quantum computational advantage with a programmable photonic processor},
+volume = {606},
+journal = {Nature},
+doi = {10.1038/s41586-022-04725-x}
+}
+
+@article{Henriet2020quantumcomputing,
+  doi = {10.22331/q-2020-09-21-327},
+  url = {https://doi.org/10.22331/q-2020-09-21-327},
+  title = {Quantum computing with neutral atoms},
+  author = {Henriet, Lo{\"{i}}c and Beguin, Lucas and Signoles, Adrien and Lahaye, Thierry and Browaeys, Antoine and Reymond, Georges-Olivier and Jurczak, Christophe},
+  journal = {{Quantum}},
+  issn = {2521-327X},
+  publisher = {{Verein zur F{\"{o}}rderung des Open Access Publizierens in den Quantenwissenschaften}},
+  volume = {4},
+  pages = {327},
+  month = sep,
+  year = {2020}
+}
+
+@article{bruzewicz2019trapped,
+  title={Trapped-ion quantum computing: Progress and challenges},
+  author={Bruzewicz, Colin D and Chiaverini, John and McConnell, Robert and Sage, Jeremy M},
+  journal={Applied Physics Reviews},
+  volume={6},
+  number={2},
+  year={2019},
+  publisher={AIP Publishing}
+}
+
+@article{Wu_2021,
+   title={A concise review of Rydberg atom based quantum computation and quantum simulation*},
+   volume={30},
+   ISSN={1674-1056},
+   url={http://dx.doi.org/10.1088/1674-1056/abd76f},
+   DOI={10.1088/1674-1056/abd76f},
+   number={2},
+   journal={Chinese Physics B},
+   publisher={IOP Publishing},
+   author={Wu, Xiaoling and Liang, Xinhui and Tian, Yaoqi and Yang, Fan and Chen, Cheng and Liu, Yong-Chun and Tey, Meng Khoon and You, Li},
+   year={2021},
+   month=feb, pages={020305} }
+
+@article{Huang_2020,
+   title={Superconducting quantum computing: a review},
+   volume={63},
+   ISSN={1869-1919},
+   url={http://dx.doi.org/10.1007/s11432-020-2881-9},
+   DOI={10.1007/s11432-020-2881-9},
+   number={8},
+   journal={Science China Information Sciences},
+   publisher={Springer Science and Business Media LLC},
+   author={Huang, He-Liang and Wu, Dachao and Fan, Daojin and Zhu, Xiaobo},
+   year={2020},
+   month=jul }
+
+@article{SC_Qubits,
+   author = "Kjaergaard, Morten and Schwartz, Mollie E. and Braumüller, Jochen and Krantz, Philip and Wang, Joel I.-J. and Gustavsson, Simon and Oliver, William D.",
+   title = "Superconducting Qubits: Current State of Play", 
+   journal= "Annual Review of Condensed Matter Physics",
+   year = "2020",
+   volume  = {11},
+   pages = "369-395",
+   doi = "https://doi.org/10.1146/annurev-conmatphys-031119-050605",
+   url = "https://www.annualreviews.org/content/journals/10.1146/annurev-conmatphys-031119-050605",
+   publisher = "Annual Reviews",
+   issn = "1947-5462",
+   type = "Journal Article",
+   keywords = "NISQ era",
+   keywords = "quantum computing",
+   keywords = "quantum error correction",
+   keywords = "quantum algorithms",
+   keywords = "superconducting circuits",
+   keywords = "quantum simulation",
+   abstract = "Superconducting qubits are leading candidates in the race to build a quantum computer capable of realizing computations beyond the reach of modern supercomputers. The superconducting qubit modality has been used to demonstrate prototype algorithms in the noisy intermediate-scale quantum (NISQ) technology era, in which non-error-corrected qubits are used to implement quantum simulations and quantum algorithms. With the recent demonstrations of multiple high-fidelity, two-qubit gates as well as operations on logical qubits in extensible superconducting qubit systems, this modality also holds promise for the longer-term goal of building larger-scale error-corrected quantum computers. In this brief review, we discuss several of the recent experimental advances in qubit hardware, gate implementations, readout capabilities, early NISQ algorithm implementations, and quantum error correction using superconducting qubits. Although continued work on many aspects of this technology is certainly necessary, the pace of both conceptual and technical progress in recent years has been impressive, and here we hope to convey the excitement stemming from this progress.",
+}
+
+@article{Bloch_Sphere_Ref,
+   title={When Entanglement Meets Classical Communications: Quantum Teleportation for the Quantum Internet},
+   volume={68},
+   ISSN={1558-0857},
+   url={http://dx.doi.org/10.1109/TCOMM.2020.2978071},
+   DOI={10.1109/tcomm.2020.2978071},
+   number={6},
+   journal={IEEE Transactions on Communications},
+   publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+   author={Cacciapuoti, Angela Sara and Caleffi, Marcello and Van Meter, Rodney and Hanzo, Lajos},
+   year={2020},
+   month=jun, pages={3808–3833} }
+
+@book{nielsen2010quantum,
+  title={Quantum Computation and Quantum Information: 10th Anniversary Edition},
+  author={Nielsen, M.A. and Chuang, I.L.},
+  isbn={9781139495486},
+  url={https://books.google.pt/books?id=-s4DEy7o-a0C},
+  year={2010},
+  publisher={Cambridge University Press}
+}
+
+@article{Barenco_1995,
+   title={Elementary gates for quantum computation},
+   volume={52},
+   ISSN={1094-1622},
+   url={http://dx.doi.org/10.1103/PhysRevA.52.3457},
+   DOI={10.1103/physreva.52.3457},
+   number={5},
+   journal={Physical Review A},
+   publisher={American Physical Society (APS)},
+   author={Barenco, Adriano and Bennett, Charles H. and Cleve, Richard and DiVincenzo, David P. and Margolus, Norman and Shor, Peter and Sleator, Tycho and Smolin, John A. and Weinfurter, Harald},
+   year={1995},
+   month=nov, pages={3457–3467} }
+
+@inproceedings{Grover,
+author = {Grover, Lov K.},
+title = {A fast quantum mechanical algorithm for database search},
+year = {1996},
+isbn = {0897917855},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/237814.237866},
+doi = {10.1145/237814.237866},
+booktitle = {Proceedings of the Twenty-Eighth Annual ACM Symposium on Theory of Computing},
+pages = {212–219},
+numpages = {8},
+location = {Philadelphia, Pennsylvania, USA},
+series = {STOC '96}
+}
+
+@Article{e26030216,
+AUTHOR = {Wu, Hongyu and Feng, Xiaoning and Zhang, Jiale},
+TITLE = {Quantum Implementation of the SAND Algorithm and Its Quantum Resource Estimation for Brute-Force Attack},
+JOURNAL = {Entropy},
+VOLUME = {26},
+YEAR = {2024},
+NUMBER = {3},
+ARTICLE-NUMBER = {216},
+URL = {https://www.mdpi.com/1099-4300/26/3/216},
+PubMedID = {38539728},
+ISSN = {1099-4300},
+ABSTRACT = {The SAND algorithm is a family of lightweight AND-RX block ciphers released by DCC in 2022. Our research focuses on assessing the security of SAND with a quantum computation model. This paper presents the first quantum implementation of SAND (including two versions of SAND, SAND-64 and SAND-128). Considering the depth-times-width metric, the quantum circuit implementation of the SAND algorithm demonstrates a relatively lower consumption of quantum resources than that of the quantum implementations of existing lightweight algorithms. A generalized Grover-based brute-force attack framework was implemented and employed to perform attacks on two versions of the SAND algorithm. This framework utilized the g-database algorithm, which considered different plaintext–ciphertext pairs in a unified manner, reducing quantum resource consumption. Our findings indicate that the SAND-128 algorithm achieved the NIST security level I, while the SAND-64 algorithm fell short of meeting the requirements of security level I.},
+DOI = {10.3390/e26030216}
+}
+
+@article{Cerezo_2021,
+   title={Variational quantum algorithms},
+   volume={3},
+   ISSN={2522-5820},
+   url={http://dx.doi.org/10.1038/s42254-021-00348-9},
+   DOI={10.1038/s42254-021-00348-9},
+   number={9},
+   journal={Nature Reviews Physics},
+   publisher={Springer Science and Business Media LLC},
+   author={Cerezo, M. and Arrasmith, Andrew and Babbush, Ryan and Benjamin, Simon C. and Endo, Suguru and Fujii, Keisuke and McClean, Jarrod R. and Mitarai, Kosuke and Yuan, Xiao and Cincio, Lukasz and Coles, Patrick J.},
+   year={2021},
+   month=aug, pages={625–644}
+}
+
+@article{Peruzzo_2014,
+   title={A variational eigenvalue solver on a photonic quantum processor},
+   volume={5},
+   ISSN={2041-1723},
+   url={http://dx.doi.org/10.1038/ncomms5213},
+   DOI={10.1038/ncomms5213},
+   number={1},
+   journal={Nature Communications},
+   publisher={Springer Science and Business Media LLC},
+   author={Peruzzo, Alberto and McClean, Jarrod and Shadbolt, Peter and Yung, Man-Hong and Zhou, Xiao-Qi and Love, Peter J. and Aspuru-Guzik, Alán and O’Brien, Jeremy L.},
+   year={2014},
+   month=jul }
+
+@misc{johnson2017qvector,
+      title={QVECTOR: an algorithm for device-tailored quantum error correction}, 
+      author={Peter D. Johnson and Jonathan Romero and Jonathan Olson and Yudong Cao and Alán Aspuru-Guzik},
+      year={2017},
+      eprint={1711.02249},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
+}
+
+﻿@Article{Cerezo2022_QML,
+author={Cerezo, M.
+and Verdon, Guillaume
+and Huang, Hsin-Yuan
+and Cincio, Lukasz
+and Coles, Patrick J.},
+title={Challenges and opportunities in quantum machine learning},
+journal={Nature Computational Science},
+year={2022},
+month={Sep},
+day={01},
+volume={2},
+number={9},
+pages={567-576},
+abstract={At the intersection of machine learning and quantum computing, quantum machine learning has the potential of accelerating data analysis, especially for quantum data, with applications for quantum materials, biochemistry and high-energy physics. Nevertheless, challenges remain regarding the trainability of quantum machine learning models. Here we review current methods and applications for quantum machine learning. We highlight differences between quantum and classical machine learning, with a focus on quantum neural networks and quantum deep learning. Finally, we discuss opportunities for quantum advantage with quantum machine learning.},
+issn={2662-8457},
+doi={10.1038/s43588-022-00311-3},
+url={https://doi.org/10.1038/s43588-022-00311-3}
+}
+
+@misc{lin2016performance,
+      title={Performance of QAOA on Typical Instances of Constraint Satisfaction Problems with Bounded Degree}, 
+      author={Cedric Yen-Yu Lin and Yechao Zhu},
+      year={2016},
+      eprint={1601.01744},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
+}
+
+@article{PhysRevA.97.022304,
+  title = {Quantum approximate optimization algorithm for MaxCut: A fermionic view},
+  author = {Wang, Zhihui and Hadfield, Stuart and Jiang, Zhang and Rieffel, Eleanor G.},
+  journal = {Phys. Rev. A},
+  volume = {97},
+  issue = {2},
+  pages = {022304},
+  numpages = {11},
+  year = {2018},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevA.97.022304},
+  url = {https://link.aps.org/doi/10.1103/PhysRevA.97.022304}
+}
+
+@misc{Intro_QAOA,
+    title = {{Intro to QAOA}},
+    year = {2024},
+    howpublished = {\url{https://pennylane.ai/qml/demos/tutorial_qaoa_intro/}},
+    note = {{A}ccessed: 2023-12-18}
+}
+
+@misc{Pennylane,
+    title = {{PennyLane Website}},
+    year = {2024},
+    howpublished = {\url{https://pennylane.ai/}},
+    note = {{A}ccessed: 2024-05-13}
+}
+
+@misc{NetworkX,
+    title = {{NetworkX Website}},
+    year = {2024},
+    howpublished = {\url{https://networkx.org/}},
+    note = {{A}ccessed: 2024-05-13}
+}
+
+@misc{cvxpy,
+    title = {{CVXPY Website}},
+    year = {2024},
+    howpublished = {\url{https://www.cvxpy.org/}},
+    note = {{A}ccessed: 2024-05-13}
+}
+
+@misc{kingma2017adam,
+      title={Adam: A Method for Stochastic Optimization}, 
+      author={Diederik P. Kingma and Jimmy Ba},
+      year={2017},
+      eprint={1412.6980},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{Shaydulin_2021,
+   title={Classical symmetries and the Quantum Approximate Optimization Algorithm},
+   volume={20},
+   ISSN={1573-1332},
+   url={http://dx.doi.org/10.1007/s11128-021-03298-4},
+   DOI={10.1007/s11128-021-03298-4},
+   number={11},
+   journal={Quantum Information Processing},
+   publisher={Springer Science and Business Media LLC},
+   author={Shaydulin, Ruslan and Hadfield, Stuart and Hogg, Tad and Safro, Ilya},
+   year={2021},
+   month=oct
+}
+
+@inproceedings{Tabi_2020,
+   title={Quantum Optimization for the Graph Coloring Problem with Space-Efficient Embedding},
+   url={http://dx.doi.org/10.1109/QCE49297.2020.00018},
+   DOI={10.1109/qce49297.2020.00018},
+   booktitle={2020 IEEE International Conference on Quantum Computing and Engineering (QCE)},
+   publisher={IEEE},
+   author={Tabi, Zsolt and El-Safty, Kareem H. and Kallus, Zsofia and Haga, Peter and Kozsik, Tamas and Glos, Adam and Zimboras, Zoltan},
+   year={2020},
+   month=oct
+}
+
+@ARTICLE{9244637,
+  author={Lechner, Wolfgang},
+  journal={IEEE Transactions on Quantum Engineering}, 
+  title={Quantum Approximate Optimization With Parallelizable Gates}, 
+  year={2020},
+  volume={1},
+  number={},
+  pages={1-6},
+  keywords={Logic gates;Optimization;Qubit;Protocols;Lattices;Stationary state;Quantum computing;quantum technology;quantum optimization},
+  doi={10.1109/TQE.2020.3034798}
+}
+
