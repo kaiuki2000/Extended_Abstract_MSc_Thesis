@@ -111,7 +111,7 @@
 %\usepackage{multirow}
 %\usepackage{array}
 \usepackage{csquotes}% Recommended
-%\usepackage[style=authoryear, backend=bibtex, doi=false,isbn=false,url=false,eprint=false,dashed=false,maxcitenames=2, maxbibnames=100]{biblatex}
+% \usepackage[style=authoryear, backend=bibtex, doi=false,isbn=false,url=false,eprint=false,dashed=false,maxcitenames=2, maxbibnames=100]{biblatex}
 %\addbibresource{library.bib}
 
 %%
@@ -141,6 +141,13 @@
 \usepackage{tikz}
 \usetikzlibrary{quantikz2} % Also added by me. For the quantum circuit diagrams.
 \usepackage{hyperref} % Also added by me. For the \url command.
+
+% Define a new command to typeset URLs without a hyperlink
+\newcommand{\myurl}[1]{\href{run:run:dummy}{\nolinkurl{#1}}}
+
+\usepackage{multicol} % Also added by me. For the \url command.
+
+\usepackage{enumitem} % For the 'itemsep' option.
 
 % These are exact settings for a A4 page with top margin of
 % 25 mm, bottom margin of 30 mm, left and right margins of 25 mm,
@@ -190,13 +197,16 @@
 
 % REFERENCES
 
+\begingroup
+\footnotesize
 % Produces the bibliography section when processed by BibTeX
 %
 % Bibliography style
 % > entries ordered alphabetically
 %\bibliographystyle{plain}
 % > unsorted with entries appearing in the order in which the citations appear.
-\bibliographystyle{unsrt}
+% \bibliographystyle{unsrt}
+\bibliographystyle{hunsrt}
 % > entries ordered alphabetically, with first names and names of journals and months abbreviated
 % \bibliographystyle{abbrv}
 % > entries ordered alphabetically, with reference markers based on authors' initials and publication year
@@ -204,6 +214,7 @@
 
 % External bibliography database file in the BibTeX format (ExtendedAbstract_ref_db.bib)
 \bibliography{references}
+\endgroup
 
 \end{document}
 
