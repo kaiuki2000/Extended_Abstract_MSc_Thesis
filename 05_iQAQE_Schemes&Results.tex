@@ -3,7 +3,7 @@
 
 % Maybe re-read what I have until here, before resuming writing.
 
-Now, we present the various iQAQE schemes we have developed and the results of their numerical simulations. For a more detailed discussion, please refer to the full thesis (Chapter 5). Keep in mind that all numerical results refer to the same $8$-node graph: \texttt{\myurl{[(0, 1), (0, 2), (0, 6), (1, 2), (1, 6), (3, 2), (3, 4), (3, 5), (4, 5), (4, 7), (5, 7), (6, 7)]}}.
+Now, we present the various iQAQE schemes we have developed and the results of their numerical simulations. For a more detailed discussion, please refer to the full thesis (Chapter 5). Keep in mind that all numerical results refer to the same $8$-node graph: \texttt{\myurl{E = [(0, 1), (0, 2), (0, 6), (1, 2), (1, 6), (3, 2), (3, 4), (3, 5), (4, 5), (4, 7), (5, 7), (6, 7)]}}.
 
 
 % \begin{figure}[t]
@@ -32,14 +32,14 @@ These schemes fix one or more qubits to $1$ (or $0$) while letting the others va
 
 \subsubsection{Basic Polynomial Compression-type iQAQE}
 \label{subsubsection:Basic_Polynomial_iQAQE}
-
+\vspace{-2.5mm}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\columnwidth]{Figures/Polynomial_Compression_Base_k2_k3_1.png}
     \caption{Average BSF Approximation Ratio \textit{vs.} iteration number for the tested VQAs. The number of layers considered were $4$ for $k = 2$ and $5$ for $k = 3$}
     \label{fig:Comparison_k2+k3_2}
 \end{figure}
-
+\vspace{-5mm}
 This is the simplest type of polynomial compression-based iQAQE scheme. It involves fixing $k$ qubits to $1$ instead of $0$ (e.g., $\{\ket{11\text{xxx}}\}$, for $k = 2$). The number of fixed qubits ($k$) is determined by the desired order of compression, as previously described. The results for $k = 2$ and $k = 3$ are shown in Figure \ref{fig:Comparison_k2+k3_2}. Results-wise, \texttt{iQAQE\_k2} achieves a perfect approximation ratio, although it requires more iterations than QAOA. Our method outperforms QEMC for $k = 2$, but yields less promising results for $k = 3$. Nevertheless, both mappings use fewer qubits ($n = 5$) compared to QAOA ($n = 8$), which is advantageous for implementation on practical (NISQ) quantum computers.
 
 \subsubsection{Correlation-based iQAQE}
@@ -60,7 +60,7 @@ This scheme closely resembles what was previously discussed in subsection \ref{s
     \label{fig:Correlation/k=2,3,4}
 \end{figure}
 
-The underperformance may stem from doubling the number of basis states in each sub-list, resulting in a $50\%$ overlap between pairs of sub-lists, akin to Basic Polynomial Compression-type iQAQE. However, this time, with twice the basis states, the overlap is significantly higher, leading to more shared states among nodes. When overlap is excessive, adjusting one node's color without affecting others becomes more challenging, likely causing the underperformance.
+The underperformance may stem from doubling the number of basis states in each sub-list, resulting in a $50\%$ overlap between pairs of sub-lists, akin to Basic Polynomial Compression-type iQAQE. However, this time, with twice the basis states, the (absolute) overlap is significantly higher, leading to more shared states among nodes. When overlap is excessive, adjusting one node's color without affecting others becomes more challenging, likely causing the underperformance.
 
 \subsubsection{Fixed-Parity iQAQE}
 \label{subsubsection:Fixed-Parity_iQAQE}
@@ -110,7 +110,7 @@ After considering whether QEMC and iQAQE could be affected by a generic ansatz, 
     \label{fig:32-node_Graph}
 \end{figure}
 
-To assess the scalability of these algorithms, we conducted tests on larger graphs, facilitating more accurate comparisons with classical state-of-the-art methods (GW). The results ($32$-node graph) for the most promising algorithms are depicted in Figure \ref{fig:32-node_Graph}. Remarkably, the average performance of ND-CNOT-based QEMC competes closely with GW, occasionally surpassing it. Moreover, the maximum performance of the ND-CNOT-based scheme exceeds that of GW, as seen in Figure \ref{fig:32-node_Graph}. This marks the first instance in our study where one of our heuristics outperforms classical state-of-the-art algorithms, highlighting significant progress and indicating the potential for further exploration within the proposed iQAQE Framework. Other heuristics were explored in this project but are not included here due to space limitations. We have presented the most significant results, though all findings are important and should not be overlooked. For a thorough discussion, please consult the full thesis (Chapter 5).
+To assess the scalability of these algorithms, we conducted tests on larger graphs, facilitating more accurate comparisons with classical state-of-the-art methods (GW). The results ($32$-node graph) for the most promising algorithms are depicted in Figure \ref{fig:32-node_Graph}. Remarkably, the average performance of ND-CNOT-based QEMC competes closely with GW, occasionally surpassing it. Moreover, the maximum performance of the same ND-CNOT QEMC exceeds that of GW, as seen in Figure \ref{fig:32-node_Graph}. This marks the first instance in our study where one of our heuristics outperforms classical state-of-the-art algorithms, highlighting significant progress and indicating the potential for further exploration within the proposed iQAQE Framework. Other heuristics were explored in this project but are not included here due to space limitations. We have presented the most significant results, though all findings are important and should not be overlooked. For a thorough discussion, please consult the full thesis (Chapter 5).
 
 \subsection{Randomized iQAQE benchmarking -- Machine learning-based approach}
 \label{subsection:Randomized_iQAQE_ML}
