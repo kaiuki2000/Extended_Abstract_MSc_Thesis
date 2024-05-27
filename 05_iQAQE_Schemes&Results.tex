@@ -21,7 +21,7 @@ First and foremost, we aim to understand how iQAQE compares with both QAOA and Q
 % Chapter 5's figure. Positioning!
 \begin{figure*}[t]
     \centering
-    \includegraphics[width=\textwidth]{Figures/Random_iQAQE.png}
+    \includegraphics[width=0.95\textwidth]{Figures/Random_iQAQE_Updated.png}
     \caption{Comparison between the $3$ VQAs' performances (QAOA, QEMC and iQAQE), using an infinite and finite number of shots. The best-so-far average is plotted.}
     \label{fig:3_Comparison_shots}
 \end{figure*}
@@ -39,7 +39,7 @@ These schemes fix one or more qubits to $1$ (or $0$) while letting the others va
     \caption{Average BSF Approximation Ratio \textit{vs.} iteration number for the tested VQAs. The number of layers considered were $4$ for $k = 2$ and $5$ for $k = 3$}
     \label{fig:Comparison_k2+k3_2}
 \end{figure}
-\vspace{-5mm}
+\vspace{-3.5mm}
 This is the simplest type of polynomial compression-based iQAQE scheme. It involves fixing $k$ qubits to $1$ instead of $0$ (e.g., $\{\ket{11\text{xxx}}\}$, for $k = 2$). The number of fixed qubits ($k$) is determined by the desired order of compression, as previously described. The results for $k = 2$ and $k = 3$ are shown in Figure \ref{fig:Comparison_k2+k3_2}. Results-wise, \texttt{iQAQE\_k2} achieves a perfect approximation ratio, although it requires more iterations than QAOA. Our method outperforms QEMC for $k = 2$, but yields less promising results for $k = 3$. Nevertheless, both mappings use fewer qubits ($n = 5$) compared to QAOA ($n = 8$), which is advantageous for implementation on practical (NISQ) quantum computers.
 
 \subsubsection{Correlation-based iQAQE}
