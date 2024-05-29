@@ -17,7 +17,7 @@ Hybrid quantum-classical computing refers to a computational approach that combi
 
 \begin{figure*}[b]
     \centering
-    \begin{equation}\label{eq:param_shift}\tag{3}
+    \begin{equation}\label{eq:param_shift}\tag{4}
         \frac{\partial C}{\partial \theta_l} = \sum_k \frac{1}{2\sin{\alpha}}\left(Tr\left[O_k U(\boldsymbol{\theta_+}) \rho_k U^{\dagger}(\boldsymbol{\theta_+})\right] - Tr\left[O_k U(\boldsymbol{\theta_-}) \rho_k U^{\dagger}(\boldsymbol{\theta_-})\right]\right)
     \end{equation}
     % \caption{Parameter-shift rule equation.}
@@ -52,7 +52,7 @@ C(\boldsymbol{\theta}) = \sum_k f_k\left( Tr\left[O_k U(\boldsymbol{\theta}) \rh
 \label{sec: MaxCut}
 The MaxCut problem, a fundamental problem in graph theory and combinatorial optimization, involves partitioning a graph \( G = (V, E) \) into two disjoint subsets, \( S_1 \) and \( S_2 \), such that the number of edges connecting vertices from different subsets is maximized. Formally, the objective is to find a partition \( (S_1, S_2) \) that maximizes:
 
-\begin{equation}\label{eq:Cut}\tag{4}
+\begin{equation}\label{eq:Cut}
 \text{Cut}(S_1, S_2) = \sum_{(u, v) \in E} \chi(u, v),
 \end{equation}
 where \( \chi(u, v) = 1 \) if \( u \) and \( v \) belong to different subsets, and \( \chi(u, v) = 0 \) if they belong to the same subset. This quantity is referred to as the "cut" of the partition $(S_1, S_2)$. Pictorially, this can be represented as cutting the edges of the graph (Figure \ref{fig:MaxCut}), hence the name MaxCut. What we describe here is the un-directed, un-weighted MaxCut problem. A more general formulation would involve the specific graph's adjacency matrix, $W_{ij}$. % Can also remove this last part here: "What we describe here is the un-directed, un-weighted MaxCut problem. A more general formulation would involve the specific graph's adjacency matrix, $W_{ij}$."
