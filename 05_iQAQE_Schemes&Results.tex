@@ -61,6 +61,8 @@ This scheme closely resembles what was previously discussed in subsection \ref{s
     \label{fig:Correlation/k=2,3,4}
 \end{figure}
 
+\vspace*{-2.5mm}
+
 The underperformance may stem from doubling the number of basis states in each sub-list, resulting in a $50\%$ overlap between pairs of sub-lists, akin to Basic Polynomial Compression-type iQAQE. However, this time, with twice the basis states, the (absolute) overlap is significantly higher, leading to more shared states among nodes. When overlap is excessive, adjusting one node's color without affecting others becomes more challenging, likely causing the underperformance.
 
 \subsubsection{Fixed-Parity iQAQE}
@@ -94,6 +96,8 @@ Now, we present another heuristic method for mapping the basis states to the nod
     \caption{Implementation of the Unmodified Extended-QEMC scheme for the usual $8$-node graph: comparison with QAOA and regular QEMC for various values of $m$. Note that $m$ is not extended beyond $5$, as this would exceed the number of qubits used in QAOA. Additionally, we utilize \texttt{n\_layers = 3}, \texttt{step\_size = 0.95} and \texttt{B = 4}.}
     \label{fig:Vanilla_Extended-QEMC}
 \end{figure}
+
+\vspace*{-2.5mm}
 
 Amid the various schemes we've attempted, I've devised an extension to the standard QEMC scheme. This new approach enhances QEMC by incorporating $m$ additional qubits beyond the usual $\lceil\log_2(n)\rceil$ qubits required for $n$ graph nodes. This increase in qubits prevents the scheme from being easily classically simulable and allows for more basis states to be associated with each graph node. This scheme assigns $2^m$ basis states per node. Importantly, similar to QEMC, the sets of basis states associated with different nodes do not overlap. The assignment of states to each list is currently arbitrary. For simplicity, we use a straightforward partition: the first $2^m$ basis states go to the first list, the next $2^m$ to the second list, and so on. Now, I present the results of applying this scheme to the usual $8$-node graph (Figure \ref{fig:Vanilla_Extended-QEMC}).
 
